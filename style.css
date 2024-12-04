@@ -26,6 +26,7 @@ body {
     align-items: center;
     gap: 50px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #pokemon-list img {
@@ -34,12 +35,12 @@ body {
     margin-right: 10px;
 }
 
-#pokemon-list-other {
+#pokemon-list-perfect {
     list-style-type: none;
     padding: 0;
 }
 
-#pokemon-list-other li {
+#pokemon-list-perfect li {
     margin-bottom: 10px;
     border-radius: 5px;
     display: flex;
@@ -47,7 +48,7 @@ body {
     gap: 20px;
 }
 
-#pokemon-list-other label {
+#pokemon-list-perfect label {
     background: white;
     width: 100%;
     display: flex;
@@ -56,9 +57,134 @@ body {
     align-items: center;
     gap: 50px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-#pokemon-list-other img {
+#pokemon-list-perfect img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#pokemon-list-shadow {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pokemon-list-shadow li {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#pokemon-list-shadow label {
+    background: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #333;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#pokemon-list-shadow img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#pokemon-list-shiny {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pokemon-list-shiny li {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#pokemon-list-shiny label {
+    background: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #333;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#pokemon-list-shiny img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#pokemon-list-lucky {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pokemon-list-lucky li {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#pokemon-list-lucky label {
+    background: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #333;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#pokemon-list-lucky img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#pokemon-list-dynamax {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pokemon-list-dynamax li {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#pokemon-list-dynamax label {
+    background: white;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #333;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#pokemon-list-dynamax img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -83,6 +209,12 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+    cursor: pointer;
+    border-bottom: 5px solid antiquewhite;
+}
+
+#title4:hover {
+    border-bottom: 5px solid #333;
 }
 
 input[type=checkbox] {
@@ -90,32 +222,7 @@ input[type=checkbox] {
     width: 50px;
     height: 50px;
     float: left;
-}
-
-#navigation-box {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-
-#navpokemon {
-    font-size: 50px;
-    border-bottom: 5px solid #333;
-    border-right: 5px solid antiquewhite;
-    border-left: 5px solid antiquewhite;
-    border-top: 5px solid antiquewhite;
-    background-color: antiquewhite;;
-}
-
-#navpokemon:hover {
     cursor: pointer;
-    background-color: #333;
-    color: white;
-    border-bottom: 5px solid #333;
-    border-right: 5px solid #333;
-    border-left: 5px solid #333;
-    border-top: 5px solid #333;
-    border-radius: 5px;
 }
 
 #big-pokemoncount-container {

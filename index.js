@@ -149,10 +149,54 @@ checkboxesperfect.forEach(checkbox => {
 
 function Normal() {
     document.getElementById("pokemon-list").style.display = "block";
-    document.getElementById("pokemon-list-other").style.display = "none";
+    document.getElementById("pokemon-list-perfect").style.display = "none";
+    document.getElementById("pokemon-list-shadow").style.display = "none";
+    document.getElementById("pokemon-list-dynamax").style.display = "none";
+    document.getElementById("pokemon-list-lucky").style.display = "none";
+    document.getElementById("pokemon-list-shiny").style.display = "none";
 }
 
-function Other() {
+function Perfect() {
     document.getElementById("pokemon-list").style.display = "none";
-    document.getElementById("pokemon-list-other").style.display = "block";
+    document.getElementById("pokemon-list-perfect").style.display = "block";
+    document.getElementById("pokemon-list-shadow").style.display = "none";
+    document.getElementById("pokemon-list-dynamax").style.display = "none";
+    document.getElementById("pokemon-list-lucky").style.display = "none";
+    document.getElementById("pokemon-list-shiny").style.display = "none";
+}
+
+function Shadow() {
+    document.getElementById("pokemon-list").style.display = "none";
+    document.getElementById("pokemon-list-perfect").style.display = "none";
+    document.getElementById("pokemon-list-shadow").style.display = "block";
+    document.getElementById("pokemon-list-dynamax").style.display = "none";
+    document.getElementById("pokemon-list-lucky").style.display = "none";
+    document.getElementById("pokemon-list-shiny").style.display = "none";
+}
+
+function Dynamax() {
+    document.getElementById("pokemon-list").style.display = "none";
+    document.getElementById("pokemon-list-perfect").style.display = "none";
+    document.getElementById("pokemon-list-shadow").style.display = "none";
+    document.getElementById("pokemon-list-dynamax").style.display = "block";
+    document.getElementById("pokemon-list-lucky").style.display = "none";
+    document.getElementById("pokemon-list-shiny").style.display = "none";
+}
+
+function Lucky() {
+    document.getElementById("pokemon-list").style.display = "none";
+    document.getElementById("pokemon-list-perfect").style.display = "none";
+    document.getElementById("pokemon-list-shadow").style.display = "none";
+    document.getElementById("pokemon-list-dynamax").style.display = "none";
+    document.getElementById("pokemon-list-lucky").style.display = "block";
+    document.getElementById("pokemon-list-shiny").style.display = "none";
+}
+
+function Shiny() {
+    document.getElementById("pokemon-list").style.display = "none";
+    document.getElementById("pokemon-list-perfect").style.display = "none";
+    document.getElementById("pokemon-list-shadow").style.display = "none";
+    document.getElementById("pokemon-list-dynamax").style.display = "none";
+    document.getElementById("pokemon-list-lucky").style.display = "none";
+    document.getElementById("pokemon-list-shiny").style.display = "block";
 }
