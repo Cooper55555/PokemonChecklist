@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title1">Pokemon Checklist</h1>
+    <h3 id="title2">
+        You have <span id="numberchange">0</span> / 108 pokemon!
+        <br>
+        <br>
+    </h3>
+    <div id="big-pokemoncount-container">
+    <div id="pokemoncount">
+    <h3 id="title4">Normal Pokemon: <span id="numberchangenormal">0</span> / 33</h3>
+    <h3 id="title4">Shadow Pokemon: <span id="numberchangeshadow">0</span> / 3</h3>
+</div>
+<div id="pokemoncount">
+    <h3 id="title4">Perfect Pokemon: <span id="numberchangperfect">0</span> / 33</h3>
+    <h3 id="title4">Dynamax Pokemon: <span id="numberchangedynamax">0</span> / 3</h3>
+</div>
+<div id="pokemoncount">
+    <h3 id="title4">Shiny Pokemon: <span id="numberchangeshiny">0</span> / 33</h3>
+    <h3 id="title4">Lucky Pokemon: <span id="numberchangelucky">0</span> / 3</h3>
+</div>
+</div>
+    <div id="navigation-box">
+        <button id="navpokemon" onclick="Normal()">Normal Versions</button>
+        <button id="navpokemon" onclick="Other()">Other Versions</button>
+</div>
+    <h2 id="title3">
+        <br>
+        Kanto Pokemon
+    </h2>
+    <ul id="pokemon-list">
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaur" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaur1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaur2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shiny Bulbasaur
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaur" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaur1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaur2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shiny Ivysaur
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="venusaur" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Venusaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaur1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Venusaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaur2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shiny Venusaur
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="charmander" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander"> Charmander
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="charmander1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander"> Perfect Charmander
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="charmander2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander"> Shiny Charmander
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="charmeleon" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="Charmeleon"> Charmeleon
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="charmeleon1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="Charmeleon"> Perfect Charmeleon
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="charmeleon2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="Charmeleon"> Shiny Charmeleon
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="charizard" cclass="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard"> Charizard
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="charizard1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard"> Perfect Charizard
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="charizard2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard"> Shiny Charizard
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="squirtle" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle"> Squirtle
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="squirtle1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle"> Perfect Squirtle
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="squirtle2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle"> Shiny Squirtle
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="wartortle" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="Wartortle"> Wartortle
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="wartortle1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="Wartortle"> Perfect Wartortle
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="wartortle2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="Wartortle"> Shiny Wartortle
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="blastoise" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="Blastoise"> Blastoise
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="blastoise1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="Blastoise"> Perfect Blastoise
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="blastoise2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="Blastoise"> Shiny Blastoise
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Caterpie" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="Caterpie"> Caterpie
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Caterpie1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="Caterpie"> Perfect Caterpie
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Caterpie2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="Caterpie"> Shiny Caterpie
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Metapod" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="Metapod"> Metapod
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Metapod1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="Metapod"> Perfect Metapod
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Metapod2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="Metapod"> Shiny Metapod
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Butterfree" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="Butterfree"> Butterfree
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Butterfree1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="Butterfree"> Perfect Butterfree
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Butterfree2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="Butterfree"> Shiny Butterfree
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Weedle" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="Weedle"> Weedle
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Weedle1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="Weedle"> Perfect Weedle
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Weedle2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="Weedle"> Shiny Weedle
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Kakuna" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="Kakuna"> Kakuna
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Kakuna1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="Kakuna"> Perfect Kakuna
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Kakuna2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="Kakuna"> Shiny Kakuna
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Beedrill" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="Beedrill"> Beedrill
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Beedrill1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="Beedrill"> Perfect Beedrill
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Beedrill2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="Beedrill"> Shiny Beedrill
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgey" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" alt="Pidgey"> Pidgey
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgey1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" alt="Pidgey"> Perfect Pidgey
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgey2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" alt="Pidgey"> Shiny Pidgey
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgeotto" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" alt="Pidgeotto"> Pidgeotto
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgeotto1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" alt="Pidgeotto"> Perfect Pidgeotto
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgeotto2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" alt="Pidgeotto"> Shiny Pidgeotto
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgeot" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" alt="Pidgeot"> Pidgeot
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgeot1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" alt="Pidgeot"> Perfect Pidgeot
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pidgeot2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" alt="Pidgeot"> Shiny Pidgeot
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Rattata" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" alt="Rattata"> Rattata
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Rattata1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" alt="Rattata"> Perfect Rattata
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Rattata2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" alt="Rattata"> Shiny Rattata
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Raticate" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" alt="Raticate"> Raticate
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Raticate1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" alt="Raticate"> Perfect Raticate
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Raticate2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" alt="Raticate"> Shiny Raticate
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRattata" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/rattata-alolan.png" alt="AlolanRattata"> Alolan Rattata
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRattata1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/rattata-alolan.png" alt="AlolanRattata"> Perfect Alolan Rattata
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRattata2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/rattata-alolan.png" alt="AlolanRattata"> Shiny Alolan Rattata
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRaticate" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/raticate-alolan.png" alt="AlolanRaticate"> Alolan Raticate
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRaticate1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/raticate-alolan.png" alt="AlolanRaticate"> Perfect Alolan Raticate
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRaticate2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/raticate-alolan.png" alt="AlolanRaticate"> Shiny Alolan Raticate
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Spearow" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" alt="Spearow"> Spearow
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Spearow1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" alt="Spearow"> Perfect Spearow
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Spearow2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" alt="Spearow"> Shiny Spearow
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Fearow" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" alt="Fearow"> Fearow
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Fearow1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" alt="Fearow"> Perfect Fearow
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Fearow2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" alt="Fearow"> Shiny Fearow
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Ekans" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" alt="Ekans"> Ekans
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Ekans1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" alt="Ekans"> Perfect Ekans
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Ekans2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" alt="Ekans"> Shiny Ekans
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Arbok" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt="Arbok"> Arbok
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Arbok1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt="Arbok"> Perfect Arbok
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Arbok2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt="Arbok"> Shiny Arbok
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Pikachu" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu"> Pikachu
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pikachu1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu"> Perfect Pikachu
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Pikachu2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu"> Shiny Pikachu
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Raichu" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="Raichu"> Raichu
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Raichu1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="Raichu"> Perfect Raichu
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Raichu2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="Raichu"> Shiny Raichu
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRaichu" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/raichu-alolan.png" alt="AlolanRaichu"> Alolan Raichu
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRaichu1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/raichu-alolan.png" alt="AlolanRaichu"> Perfect Alolan Raichu
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanRaichu2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/raichu-alolan.png" alt="AlolanRaichu"> Shiny Alolan Raichu
+            </label>
+        </li>
+        <br>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Sandshrew" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" alt="Sandshrew"> Sandshrew
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Sandshrew1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" alt="Sandshrew"> Perfect Sandshrew
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Sandshrew2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" alt="Sandshrew"> Shiny Sandshrew
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="Sandslash" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" alt="Sandslash"> Sandslash
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Sandslash1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" alt="Sandslash"> Perfect Sandslash
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="Sandslash2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" alt="Sandslash"> Shiny Sandslash
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanSandshrew" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/sandshrew-alolan.png" alt="AlolanSandshrew"> Alolan Sandshrew
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanSandshrew1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/sandshrew-alolan.png" alt="AlolanSandshrew"> Perfect Alolan Sandshrew
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanSandshrew2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/sandshrew-alolan.png" alt="AlolanSandshrew"> Shiny Alolan Sandshrew
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanSandslash" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/sandslash-alolan.png" alt="AlolanSandslash"> Alolan Sandslash
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanSandslash1" class="pokemon-checkbox-perfect" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/sandslash-alolan.png" alt="AlolanSandslash"> Perfect Alolan Sandslash
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="AlolanSandslash2" class="pokemon-checkbox-shiny" id="pokemon-checkbox"> 
+                <img src="https://img.pokemondb.net/sprites/lets-go-pikachu-eevee/normal/sandslash-alolan.png" alt="AlolanSandslash"> Shiny Alolan Sandslash
+            </label>
+        </li>
+        <br>
+    </ul>
+    <ul id="pokemon-list-other" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother" class="pokemon-checkbox-shadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shadow Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother1" class="pokemon-checkbox-dynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Dynamax Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother2" class="pokemon-checkbox-lucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Lucky Bulbasaur
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother" class="pokemon-checkbox-shadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shadow Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother1" class="pokemon-checkbox-dynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Dynamax Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother2" class="pokemon-checkbox-lucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Lucky Ivysaur
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother" class="pokemon-checkbox-shadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shadow Venusaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother1" class="pokemon-checkbox-dynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Dynamax Venusaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother2" class="pokemon-checkbox-lucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Lucky Venusaur
+            </label>
+        </li>
+        <br>
+    </ul>
+    <script src="index.js"></script>
+</body>
+</html>
