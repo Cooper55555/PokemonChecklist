@@ -20,7 +20,7 @@ nav {
     padding: 3px 20px;
 }
 
-input {
+.search-box input {
     flex: 1;
     height: 50px;
     background: transparent;
@@ -101,13 +101,14 @@ li {
 label {
     background: white;
     width: 100%;
-    display: flex;
     padding: 10px;
+    display: flex;
     border: 2px solid #333;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     border-radius: 10px;
     cursor: pointer;
+    text-align: left;
 }
 
 img {
@@ -158,3 +159,6 @@ input[type=checkbox] {
     border-top: 5px solid #333;
 }
 
+#pokemon-buttons {
+    margin: 20px;
+}
