@@ -7,30 +7,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="title-container">
     <h1 id="title1">Pokemon Checklist</h1>
     <h3 id="title2">
         You have <span id="numberchange">0</span> / 108 pokemon!
-        <br>
-        <br>
     </h3>
+</div>
     <div id="big-pokemoncount-container">
     <div id="pokemoncount">
+        <br>
     <h3 id="title4" onclick="Normal()">Normal Pokemon: <span id="numberchangenormal">0</span> / 33</h3>
     <h3 id="title4" onclick="Shadow()">Shadow Pokemon: <span id="numberchangeshadow">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyPerfect()">Shiny Perfect Pokemon: <span id="numberchangeshinyperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="LuckyPerfect()">Lucky Perfect Pokemon: <span id="numberchangeperfectlucky">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyLucky()">Lucky Shiny Pokemon: <span id="numberchangeshinylucky">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyLuckyPerfect()">Lucky Shiny Perfect Pokemon: <span id="numberchangeshinyluckyperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyCostumePerfect()">Shiny Perfect Costume Pokemon: <span id="numberchangecostumeshinyperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyPurified()">Shiny Purified Pokemon: <span id="numberchangepurifiedshiny">0</span> / 3</h3>
+    <h3 id="title4" onclick="Gigantamax()">Gigantamax Pokemon: <span id="numberchangegigantamax">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyGigantamaxPerfect()">Shiny Perfect Gigantamax Pokemon: <span id="numberchangegigantamaxperfectshiny">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyImperfectShadow()">Shiny Imperfect Shadow Pokemon: <span id="numberchangeimperfectshinyshadow">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyLocationPerfectBackground()">Shiny Perfect Location Background Pokemon: <span id="numberchangelocationbackgroundshinyperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinySpecialBackground()">Shiny Special Background Pokemon: <span id="numberchangespecialbackgroundshiny">0</span> / 3</h3>
 </div>
 <div id="pokemoncount">
-    <h3 id="title4" onclick="Perfect()">Perfect Pokemon: <span id="numberchangperfect">0</span> / 33</h3>
+    <br>
+    <h3 id="title4" onclick="Perfect()">Perfect Pokemon: <span id="numberchangeperfect">0</span> / 33</h3>
     <h3 id="title4" onclick="Dynamax()">Dynamax Pokemon: <span id="numberchangedynamax">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShadowPerfect()">Shadow Perfect Pokemon: <span id="numberchangeperfectshadow">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyShadow()">Shadow Shiny Pokemon: <span id="numberchangeshinyshadow">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyShadowPerfect()">Shadow Shiny Perfect Pokemon: <span id="numberchangeshinyshadowperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="Costume()">Costume Pokemon: <span id="numberchangecostume">0</span> / 3</h3>
+    <h3 id="title4" onclick="CostumePerfect()">Perfect Costume Pokemon: <span id="numberchangecostumeperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="PurifiedPerfect()">Perfect Purified Pokemon: <span id="numberchangepurifiedperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyGigantamax()">Shiny Gigantamax Pokemon: <span id="numberchangegigantamaxshiny">0</span> / 3</h3>
+    <h3 id="title4" onclick="Imperfect()">Imperfect Pokemon: <span id="numberchangeimperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="LocationBackground()">Location Background Pokemon: <span id="numberchangelocationbackground">0</span> / 3</h3>
+    <h3 id="title4" onclick="LocationBackgroundPerfect()">Perfect Location Background Pokemon: <span id="numberchangelocationbackgroundperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinySpecialBackgroundPerfect()">Shiny Perfect Special Background Pokemon: <span id="numberchangespecialbackgroundshinyperfect">0</span> / 3</h3>
 </div>
 <div id="pokemoncount">
+    <br>
     <h3 id="title4" onclick="Shiny()">Shiny Pokemon: <span id="numberchangeshiny">0</span> / 33</h3>
     <h3 id="title4" onclick="Lucky()">Lucky Pokemon: <span id="numberchangelucky">0</span> / 3</h3>
+    <h3 id="title4" onclick="DynamaxPerfect()">Dynamax Perfect Pokemon: <span id="numberchangeperfectdynamax">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyDynamax()">Dynamax Shiny Pokemon: <span id="numberchangeshinydynamax">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyDynamaxPerfect()">Dynamax Shiny Perfect Pokemon: <span id="numberchangeshinydynamaxperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyCostume()">Shiny Costume Pokemon: <span id="numberchangecostumeshiny">0</span> / 3</h3>
+    <h3 id="title4" onclick="Purified()">Purified Pokemon: <span id="numberchangepurified">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyPurifiedPerfect()">Shiny Perfect Purified Pokemon: <span id="numberchangepurifiedshinyperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="GigantamaxPerfect()">Perfect Gigantamax Pokemon: <span id="numberchangegigantamaxperfect">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyImperfect()">Shiny Imperfect Pokemon: <span id="numberchangeimperfectshiny">0</span> / 3</h3>
+    <h3 id="title4" onclick="ShinyLocationBackground()">Shiny Location Background Pokemon: <span id="numberchangelocationbackgroundshiny">0</span> / 3</h3>
+    <h3 id="title4" onclick="SpecialBackground()">Special Background Pokemon: <span id="numberchangelocationspecialbackground">0</span> / 3</h3>
+    <h3 id="title4" onclick="SpecialBackgroundPerfect()">Perfect Special Background Pokemon: <span id="numberchangelocationspecialbackgroundperfect">0</span> / 3</h3>
 </div>
-</div>
-    <h2 id="title3">
+    </div>
+    <h2 id="title3" hidden>
+        <br>
         Kanto Pokemon
     </h2>
-    <ul id="pokemon-list">
+    <ul id="pokemon-list" hidden>
         <li>
             <label>
                 <input type="checkbox" data-pokemon="bulbasaur" class="pokemon-checkbox-normal" id="pokemon-checkbox"> 
@@ -700,6 +737,534 @@
             <label>
                 <input type="checkbox" data-pokemon="venusaurother2" class="pokemon-checkbox-lucky" id="pokemon-checkbox"> 
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Lucky Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-shinylucky" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother3" class="pokemon-checkbox-shinylucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shiny Lucky Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother3" class="pokemon-checkbox-shinylucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shiny Lucky Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother3" class="pokemon-checkbox-shinylucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shiny Lucky Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-shinyluckyperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother4" class="pokemon-checkbox-shinyluckyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shiny Lucky Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother4" class="pokemon-checkbox-shinyluckyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shiny Lucky Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother4" class="pokemon-checkbox-shinyluckyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shiny Lucky Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-costumeshinyperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother5" class="pokemon-checkbox-costumeshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Costume Shiny Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother5" class="pokemon-checkbox-costumeshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Costume Shiny Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother5" class="pokemon-checkbox-costumeshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Costume Shiny Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-purifiedshiny" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother6" class="pokemon-checkbox-purifiedshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Purified Shiny Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother6" class="pokemon-checkbox-purifiedshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Purified Shiny Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother6" class="pokemon-checkbox-purifiedshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Purified Shiny Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-gigantamax" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother7" class="pokemon-checkbox-gigantamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Gigantamax Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother7" class="pokemon-checkbox-gigantamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Gigantamax Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother7" class="pokemon-checkbox-gigantamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Gigantamax Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-gigantamaxperfectshiny" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother8" class="pokemon-checkbox-gigantamaxperfectshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Gigantamax Perfect Shiny Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother8" class="pokemon-checkbox-gigantamaxperfectshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Gigantamax Perfect Shiny Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother8" class="pokemon-checkbox-gigantamaxperfectshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Gigantamax Perfect Shiny Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-imperfectshinyshadow" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother9" class="pokemon-checkbox-imperfectshinyshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Imperfect Shiny Shadow Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother9" class="pokemon-checkbox-imperfectshinyshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Imperfect Shiny Shadow Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother9" class="pokemon-checkbox-imperfectshinyshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Imperfect Shiny Shadow Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-locationbackgroundshinyperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother10" class="pokemon-checkbox-locationbackgroundshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Location Background Shiny Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother10" class="pokemon-checkbox-locationbackgroundshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Location Background Shiny Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother10" class="pokemon-checkbox-locationbackgroundshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Location Background Shiny Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-specialbackgroundshiny" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother11" class="pokemon-checkbox-specialbackgroundshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Special Background Shiny Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother11" class="pokemon-checkbox-specialbackgroundshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Special Background Shiny Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother11" class="pokemon-checkbox-specialbackgroundshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Special Background Shiny Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-perfectshadow" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother12" class="pokemon-checkbox-perfectshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Shadow Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother12" class="pokemon-checkbox-perfectshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Shadow Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother12" class="pokemon-checkbox-perfectshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Shadow Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-shinyshadow" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother13" class="pokemon-checkbox-shinyshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shiny Shadow Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother13" class="pokemon-checkbox-shinyshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shiny Shadow Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother13" class="pokemon-checkbox-shinyshadow" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shiny Shadow Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-shinyshadowperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother14" class="pokemon-checkbox-shinyshadowperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shiny Shadow Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother14" class="pokemon-checkbox-shinyshadowperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shiny Shadow Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother14" class="pokemon-checkbox-shinyshadowperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shiny Shadow Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-costume" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother15" class="pokemon-checkbox-costume" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Costume Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother15" class="pokemon-checkbox-costume" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Costume Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother15" class="pokemon-checkbox-costume" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Costume Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-costumeperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother16" class="pokemon-checkbox-costumeperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Costume Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother16" class="pokemon-checkbox-costumeperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Costume Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother16" class="pokemon-checkbox-costumeperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Costume Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-purifiedperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother17" class="pokemon-checkbox-purifiedperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Purified Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother17" class="pokemon-checkbox-purifiedperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Purified Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother17" class="pokemon-checkbox-purifiedperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Purified Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-gigantamaxshiny" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother18" class="pokemon-checkbox-gigantamaxshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Gigantamax Shiny Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother18" class="pokemon-checkbox-gigantamaxshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Gigantamax Shiny Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother18" class="pokemon-checkbox-gigantamaxshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Gigantamax Shiny Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-imperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother19" class="pokemon-checkbox-imperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Imperfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother19" class="pokemon-checkbox-imperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Imperfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother19" class="pokemon-checkbox-imperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Imperfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-locationbackground" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother20" class="pokemon-checkbox-locationbackground" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Location Background Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother20" class="pokemon-checkbox-locationbackground" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Location Background Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother20" class="pokemon-checkbox-locationbackground" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Location Background Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-locationbackgroundperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother21" class="pokemon-checkbox-locationbackgroundperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Location Background Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother21" class="pokemon-checkbox-locationbackgroundperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Location Background Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother21" class="pokemon-checkbox-locationbackgroundperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Location Background Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-specialbackgroundshinyperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother22" class="pokemon-checkbox-specialbackgroundshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Special Background Shiny Perfect Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother22" class="pokemon-checkbox-specialbackgroundshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Special Background Shiny Perfect Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother22" class="pokemon-checkbox-specialbackgroundshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Special Background Shiny Perfect Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-perfectdynamax" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother23" class="pokemon-checkbox-perfectdynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Dynamax Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother23" class="pokemon-checkbox-perfectdynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Dynamax Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother23" class="pokemon-checkbox-perfectdynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Dynamax Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-shinydynamax" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother24" class="pokemon-checkbox-shinydynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shiny Dynamax Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother24" class="pokemon-checkbox-shinydynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shiny Dynamax Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother24" class="pokemon-checkbox-shinydynamax" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shiny Dynamax Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-shinydynamaxperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother25" class="pokemon-checkbox-shinydynamaxperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Shiny Dynamax Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother25" class="pokemon-checkbox-shinydynamaxperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Shiny Dynamax Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother25" class="pokemon-checkbox-shinydynamaxperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Shiny Dynamax Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-costumeshiny" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother26" class="pokemon-checkbox-costumeshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Shiny Costume Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother26" class="pokemon-checkbox-costumeshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Shiny Costume Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother26" class="pokemon-checkbox-costumeshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Shiny Costume Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-purified" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother27" class="pokemon-checkbox-purified" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Purified Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother27" class="pokemon-checkbox-purified" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Purified Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother27" class="pokemon-checkbox-purified" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Purified Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-purifiedshinyperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother28" class="pokemon-checkbox-purifiedshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Shiny Purified Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother28" class="pokemon-checkbox-purifiedshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Shiny Purified Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother28" class="pokemon-checkbox-purifiedshinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Shiny Purified Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-gigantamaxperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother29" class="pokemon-checkbox-gigantamaxperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Gigantamax Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother29" class="pokemon-checkbox-gigantamaxperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Gigantamax Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother29" class="pokemon-checkbox-gigantamaxperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Gigantamax Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-imperfectshiny" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother30" class="pokemon-checkbox-imperfectshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Imperfect Shiny Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother30" class="pokemon-checkbox-imperfectshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Imperfect Shiny Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother30" class="pokemon-checkbox-imperfectshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Imperfect Shiny Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-locationbackgroundshiny" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother31" class="pokemon-checkbox-locationbackgroundshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Location Background Shiny Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother31" class="pokemon-checkbox-locationbackgroundshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Location Background Shiny Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother31" class="pokemon-checkbox-locationbackgroundshiny" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Location Background Shiny Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-locationspecialbackground" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother32" class="pokemon-checkbox-locationspecialbackground" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Special Background Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother32" class="pokemon-checkbox-locationspecialbackground" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Special Background Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother32" class="pokemon-checkbox-locationspecialbackground" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Special Background Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-locationspecialbackgroundperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother33" class="pokemon-checkbox-locationspecialbackgroundperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Special Background Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother33" class="pokemon-checkbox-locationspecialbackgroundperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Special Background Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother33" class="pokemon-checkbox-locationspecialbackgroundperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Special Background Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-perfectlucky" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother34" class="pokemon-checkbox-perfectlucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Lucky Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother34" class="pokemon-checkbox-perfectlucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Lucky Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother34" class="pokemon-checkbox-perfectlucky" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Lucky Venusaur
+            </label>
+        </li>
+    </ul>
+    <ul id="pokemon-list-shinyperfect" hidden>
+        <li>
+            <label>
+                <input type="checkbox" data-pokemon="bulbasaurother35" class="pokemon-checkbox-shinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"> Perfect Shiny Bulbasaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="ivysaurother35" class="pokemon-checkbox-shinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"> Perfect Shiny Ivysaur
+            </label>
+            <label>
+                <input type="checkbox" data-pokemon="venusaurother35" class="pokemon-checkbox-shinyperfect" id="pokemon-checkbox"> 
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"> Perfect Shiny Venusaur
             </label>
         </li>
     </ul>
