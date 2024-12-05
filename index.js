@@ -1,3 +1,53 @@
+let availableKeywords = [
+    'Normal Pokemon',
+];
+
+const resultsBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
+
+inputBox.onkeyup = function(){
+    let result = [];
+    let input = inputBox.value;
+    if(input.length){
+        result = availableKeywords.filter((keyword)=>{
+           return keyword.toLocaleLowerCase().includes(input.toLocaleLowerCase());
+        });
+        console.log(result);
+    }
+    display(result);
+
+    if(!result.length){
+        resultsBox.innerHTML = '';
+    }
+}
+
+function display(result){
+    const content = result.map((list)=>{
+        return "<li onclick=selectInput(this)>" + list + "</li>";
+    });
+
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+}
+
+function selectInput(list){
+    inputBox.value = list.innerHTML
+    resultsBox.innerHTML = '';
+}
+
+function CraftingTable() {
+    document.getElementById("search-box").style.display = "none";
+}
+
+const button = document.getElementById('checkButton');
+button.addEventListener('click', function() {
+    const input = document.getElementById('input-box').value;
+
+    if (input === "Normal Pokemon") {
+        Normal();
+    }
+
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 

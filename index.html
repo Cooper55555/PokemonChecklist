@@ -5,16 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <nav id="topnav">
+        <div id="home">
+            <button id="button-home" onclick="home()"><i class="fa-solid fa-house"></i></button>
+        </div>
+    <div class="search-box">
+        <div class="row" id="SearchBar">
+            <input type="text" id="input-box" placeholder="Search a pokemon version..." autocomplete="off">
+            <button id="checkButton"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="result-box">
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<br>
     <div id="title-container">
     <h1 id="title1">Pokemon Checklist</h1>
     <h3 id="title2">
-        You have <span id="numberchange">0</span> / 108 pokemon!
+        You have <span id="numberchange">0</span> pokemons!
     </h3>
 </div>
+<br>
+<br>
+<br>
     <div id="big-pokemoncount-container">
     <div id="pokemoncount">
+        <br>
+        <br>
         <br>
     <h3 id="title4" onclick="Normal()">Normal Pokemon: <span id="numberchangenormal">0</span> / 33</h3>
     <h3 id="title4" onclick="Shadow()">Shadow Pokemon: <span id="numberchangeshadow">0</span> / 3</h3>
@@ -32,6 +54,8 @@
 </div>
 <div id="pokemoncount">
     <br>
+    <br>
+    <br>
     <h3 id="title4" onclick="Perfect()">Perfect Pokemon: <span id="numberchangeperfect">0</span> / 33</h3>
     <h3 id="title4" onclick="Dynamax()">Dynamax Pokemon: <span id="numberchangedynamax">0</span> / 3</h3>
     <h3 id="title4" onclick="ShadowPerfect()">Shadow Perfect Pokemon: <span id="numberchangeperfectshadow">0</span> / 3</h3>
@@ -47,6 +71,8 @@
     <h3 id="title4" onclick="ShinySpecialBackgroundPerfect()">Shiny Perfect Special Background Pokemon: <span id="numberchangespecialbackgroundshinyperfect">0</span> / 3</h3>
 </div>
 <div id="pokemoncount">
+    <br>
+    <br>
     <br>
     <h3 id="title4" onclick="Shiny()">Shiny Pokemon: <span id="numberchangeshiny">0</span> / 33</h3>
     <h3 id="title4" onclick="Lucky()">Lucky Pokemon: <span id="numberchangelucky">0</span> / 3</h3>
@@ -1268,6 +1294,7 @@
             </label>
         </li>
     </ul>
+    <nav id="topnav"></nav>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,7 +1,88 @@
+nav {
+    width: 100vws;
+    height: 5vh;
+    background-color: #333;
+    padding: 2%;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.search-box {
+    width: 600px;
+    background: #fff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 3px 20px;
+}
+
+input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#button-home {
+    width: 25px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+button .fas {
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #555;
+}
+
+.result-box ul {
+    padding: 0px 10px;
+}
+
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.result-box ul li:hover {
+    background: #e9f3ff;
+}
+
+.result-box {
+    max-height: 90px;
+    overflow-y: scroll;
+    position: fixed;
+    background-color: #fff;
+    width: 600px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: antiquewhite;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 #pokemon-list {
@@ -76,3 +157,4 @@ input[type=checkbox] {
     justify-content: space-around;
     border-top: 5px solid #333;
 }
+
