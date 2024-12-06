@@ -219,13 +219,12 @@ input[type=checkbox] {
     }
 
     #title3small {
-        font-size: 28px;
+        font-size: 16px;
     }
 
     #title4 {
         font-size: 20px;
         text-align: center;
-        
     }
 
     #smalltitle4 {
@@ -267,6 +266,7 @@ input[type=checkbox] {
     img {
         width: 40px; /* Smaller image size for mobile */
         height: 40px; /* Maintaining aspect ratio */
+        margin-right: 0;
     }
 }
 
