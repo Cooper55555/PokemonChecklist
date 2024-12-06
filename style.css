@@ -142,6 +142,10 @@ img {
     text-align: center;
 }
 
+#smalltitle2 {
+    font-size: 24px;
+}
+
 #title3 {
     font-size: 50px;
     text-align: center;
@@ -217,6 +221,10 @@ input[type=checkbox] {
 
     #title2 {
         font-size: 24px;
+    }
+
+    #smalltitle2 {
+        font-size: 18px;
     }
 
     #title3 {
@@ -311,7 +319,7 @@ input[type=checkbox] {
 }
 
 #bottomnav {
-    height: 20vh;
+    height: 25vh;
     justify-content: center;
     align-items: center;
     display: flex;
