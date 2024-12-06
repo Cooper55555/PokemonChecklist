@@ -277,7 +277,7 @@ input[type=checkbox] {
     .result-box ul li {
         list-style: none;
         border-radius: 3px;
-        padding: 15px 10px;
+        padding: 6px 3px;
         cursor: pointer;
     }
 }
