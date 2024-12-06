@@ -220,7 +220,7 @@ input[type=checkbox] {
     }
 
     #title3small {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     #title4 {
@@ -271,13 +271,13 @@ input[type=checkbox] {
     }
 
     .result-box ul {
-        padding: 0px 10px;
+        padding: 0;
     }
     
     .result-box ul li {
         list-style: none;
         border-radius: 3px;
-        padding: 6px 3px;
+        padding: 0;
         cursor: pointer;
     }
 }
