@@ -203,7 +203,7 @@ input[type=checkbox] {
     #titleimage, #title4image {
         width: 40px;
         height: auto; /* Maintain aspect ratio */
-        margin-top: 10px;
+        margin: 0;
     }
 
     /* Titles */
@@ -263,6 +263,27 @@ input[type=checkbox] {
         padding: 8px; /* Reduced padding for smaller screens */
         font-size: 14px; /* Adjust font size for better readability */
     }
+
+    img {
+        width: 40px; /* Smaller image size for mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0;
+    }
+
+    .result-box {
+        max-height: 150px; /* Increase max height for small screens to accommodate more content */
+        width: 100%;
+    }
+
+    .result-box ul {
+        padding: 0 10px; /* Padding stays the same */
+        margin: 0; /* Reset default margin for better control */
+    }
+
+    .result-box ul li {
+        font-size: 14px; /* Slightly reduce font size on smaller screens */
+        padding: 12px 8px; /* Adjust padding for a more compact look */
+    }
 }
 
 /* Extra mobile styles for very small screens */
@@ -291,16 +312,4 @@ input[type=checkbox] {
     align-items: center;
     display: flex;
     color: white;
-}
-
-/* Media query for phones to make adjustments */
-@media (max-width: 600px) {
-    .result-box {
-        max-height: 150px; /* Increase max height for small screens to accommodate more content */
-    }
-
-    .result-box ul li {
-        font-size: 14px; /* Slightly reduce font size on smaller screens */
-        padding: 12px 8px; /* Adjust padding for a more compact look */
-    }
 }
