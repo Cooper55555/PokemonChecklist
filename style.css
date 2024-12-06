@@ -253,7 +253,6 @@ input[type=checkbox] {
     }
 
     li {
-        margin: 0 10px 10px; /* Reduced margins for smaller screens */
         gap: 10px; /* Reduced gap between items */
         flex-direction: column; /* Stack elements vertically on small screens */
     }
