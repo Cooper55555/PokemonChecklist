@@ -234,10 +234,7 @@ input[type=checkbox] {
     #title4-container {
         flex-direction: column; /* Stack items vertically on small screens */
         margin: 15px; /* Reduced margin for smaller screens */
-    }
-
-    li {
-        width: 768px;
+        justify-content: center;
     }
 }
 
@@ -258,10 +255,6 @@ input[type=checkbox] {
     #title4 {
         font-size: 18px;
     }
-
-    li {
-        width: 480px;
-    }
 }
 
 @media (max-width: 600px) {
@@ -277,5 +270,22 @@ input[type=checkbox] {
 
     #pokemon-buttons {
         margin: 10px; /* Reduce margin for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    li {
+        margin: 0 10px 10px; /* Reduced margins for smaller screens */
+        gap: 10px; /* Reduced gap between items */
+    }
+
+    label {
+        padding: 8px; /* Reduced padding for smaller screens */
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+    img {
+        width: 40px; /* Smaller image size for mobile */
+        height: 40px; /* Maintaining aspect ratio */
     }
 }
