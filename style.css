@@ -236,28 +236,7 @@ input[type=checkbox] {
         margin: 15px; /* Reduced margin for smaller screens */
         text-align: center;
     }
-}
 
-/* Extra mobile styles for very small screens */
-@media (max-width: 480px) {
-    #title1 {
-        font-size: 40px;
-    }
-
-    #title2 {
-        font-size: 20px;
-    }
-
-    #title3, #title3small {
-        font-size: 30px;
-    }
-
-    #title4 {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 600px) {
     input[type=checkbox] {
         width: 40px;
         height: 40px;
@@ -285,5 +264,24 @@ input[type=checkbox] {
     img {
         width: 40px; /* Smaller image size for mobile */
         height: 40px; /* Maintaining aspect ratio */
+    }
+}
+
+/* Extra mobile styles for very small screens */
+@media (max-width: 480px) {
+    #title1 {
+        font-size: 40px;
+    }
+
+    #title2 {
+        font-size: 20px;
+    }
+
+    #title3, #title3small {
+        font-size: 30px;
+    }
+
+    #title4 {
+        font-size: 18px;
     }
 }
