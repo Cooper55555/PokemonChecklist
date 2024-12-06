@@ -235,6 +235,10 @@ input[type=checkbox] {
         flex-direction: column; /* Stack items vertically on small screens */
         margin: 15px; /* Reduced margin for smaller screens */
     }
+
+    li {
+        width: 768px;
+    }
 }
 
 /* Extra mobile styles for very small screens */
@@ -253,6 +257,10 @@ input[type=checkbox] {
 
     #title4 {
         font-size: 18px;
+    }
+
+    li {
+        width: 480px;
     }
 }
 
