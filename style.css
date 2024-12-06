@@ -203,6 +203,7 @@ input[type=checkbox] {
     #titleimage, #title4image {
         width: 40px;
         height: auto; /* Maintain aspect ratio */
+        margin: 0;
     }
 
     /* Titles */
@@ -266,7 +267,7 @@ input[type=checkbox] {
     img {
         width: 40px; /* Smaller image size for mobile */
         height: auto; /* Maintain aspect ratio */
-        margin-right: 0;
+        margin: 0;
     }
 }
 
