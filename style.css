@@ -71,7 +71,7 @@ button .fas {
 
 .result-box {
     max-height: 90px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: fixed;
     background-color: #fff;
     width: 600px;
@@ -220,7 +220,7 @@ input[type=checkbox] {
     }
 
     #title3small {
-        font-size: 36px;
+        font-size: 46px;
     }
 
     #title4 {
@@ -268,17 +268,6 @@ input[type=checkbox] {
         width: 40px; /* Smaller image size for mobile */
         height: auto; /* Maintain aspect ratio */
         margin: 0;
-    }
-
-    .result-box ul {
-        padding: 0;
-    }
-    
-    .result-box ul li {
-        list-style: none;
-        border-radius: 3px;
-        padding: 0;
-        cursor: pointer;
     }
 }
 
