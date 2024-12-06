@@ -197,3 +197,9 @@ input[type=checkbox] {
 #pokemon-buttons {
     margin: 20px;
 }
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+}
