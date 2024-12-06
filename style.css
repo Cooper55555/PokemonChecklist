@@ -203,7 +203,7 @@ input[type=checkbox] {
     #titleimage, #title4image {
         width: 40px;
         height: auto; /* Maintain aspect ratio */
-        margin: 0;
+        margin-top: 10px;
     }
 
     /* Titles */
@@ -254,9 +254,9 @@ input[type=checkbox] {
     }
 
     li {
-        margin: 0 10px 10px; /* Reduced margins for smaller screens */
         gap: 10px; /* Reduced gap between items */
         flex-direction: column; /* Stack elements vertically on small screens */
+        margin-right: 20px;
     }
 
     label {
@@ -264,10 +264,9 @@ input[type=checkbox] {
         font-size: 14px; /* Adjust font size for better readability */
     }
 
-    img {
-        width: 40px; /* Smaller image size for mobile */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0;
+    .result-box ul {
+        margin: 0; /* Reset default margin for better control */
+        width: 600px;
     }
 }
 
@@ -289,4 +288,12 @@ input[type=checkbox] {
         font-size: 18px;
         text-align: center;
     }
+}
+
+#bottomnav {
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
 }
