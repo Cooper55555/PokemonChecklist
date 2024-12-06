@@ -219,13 +219,13 @@ input[type=checkbox] {
     }
 
     #title3small {
-        font-size: 36px;
-        flex-direction: column; /* Stack elements vertically on small screens */
+        font-size: 28px;
     }
 
     #title4 {
         font-size: 20px;
         text-align: center;
+        
     }
 
     #smalltitle4 {
