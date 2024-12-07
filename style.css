@@ -153,9 +153,14 @@ img {
 }
 
 #title3small {
-    font-size: 50px;
+    font-size: 67px;
     text-align: center;
     margin-bottom: 40px;
+}
+
+#title3smallgens {
+    font-size: 50px;
+    text-align: left;
 }
 
 #title4 {
@@ -232,6 +237,10 @@ input[type=checkbox] {
     }
 
     #title3small {
+        font-size: 46px;
+    }
+
+    #title3smallgens {
         font-size: 46px;
     }
 
