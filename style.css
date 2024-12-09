@@ -222,6 +222,7 @@ input[type=checkbox] {
 @media (max-width: 768px) {
     /* Title Images */
     #dots {
+        right: -5px;
         font-size: 20px; /* Reduce font size */
         flex-direction: row; /* Keep it in row, change to column if desired */
         padding: 5px; /* Add some padding */
@@ -358,6 +359,7 @@ input[type=checkbox] {
     }
 
     #dots {
+        right: -5px;
         font-size: 20px; /* Reduce font size */
         flex-direction: row; /* Keep it in row, change to column if desired */
         padding: 5px; /* Add some padding */
