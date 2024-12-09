@@ -222,11 +222,10 @@ input[type=checkbox] {
 @media (max-width: 768px) {
     /* Title Images */
     #dots {
-        text-align: center;
-        display: flex;
-        position: absolute;
-        right: 5px;
-        font-size: 12px;
+        font-size: 20px; /* Reduce font size */
+        flex-direction: row; /* Keep it in row, change to column if desired */
+        padding: 5px; /* Add some padding */
+        margin: 0; /* Adjust margin if needed */
     }
 
     h1 {
@@ -359,11 +358,10 @@ input[type=checkbox] {
     }
 
     #dots {
-        text-align: center;
-        display: flex;
-        position: absolute;
-        right: 5px;
-        font-size: 12px;
+        font-size: 20px; /* Reduce font size */
+        flex-direction: row; /* Keep it in row, change to column if desired */
+        padding: 5px; /* Add some padding */
+        margin: 0; /* Adjust margin if needed */
     }
 }
 
