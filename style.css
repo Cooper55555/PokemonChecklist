@@ -222,7 +222,11 @@ input[type=checkbox] {
 @media (max-width: 768px) {
     /* Title Images */
     #dots {
-        right: 10px;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        right: 5px;
+        font-size: 12px;
     }
 
     h1 {
@@ -352,6 +356,14 @@ input[type=checkbox] {
     #title4 {
         font-size: 18px;
         text-align: center;
+    }
+
+    #dots {
+        text-align: center;
+        display: flex;
+        position: absolute;
+        right: 5px;
+        font-size: 12px;
     }
 }
 
