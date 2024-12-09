@@ -227,6 +227,7 @@ input[type=checkbox] {
         flex-direction: row; /* Keep it in row, change to column if desired */
         padding: 5px; /* Add some padding */
         margin: 0; /* Adjust margin if needed */
+        display: flex;
     }
 
     h1 {
@@ -364,6 +365,7 @@ input[type=checkbox] {
         flex-direction: row; /* Keep it in row, change to column if desired */
         padding: 5px; /* Add some padding */
         margin: 0; /* Adjust margin if needed */
+        display: flex;
     }
 }
 
