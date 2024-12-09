@@ -222,10 +222,9 @@ input[type=checkbox] {
 @media (max-width: 768px) {
     /* Title Images */
     #dots {
-        right: 2.5px;
-        font-size: 20px; /* Reduce font size */
-        display: flex;
-        position: relative;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 18px;
     }
 
     h1 {
@@ -358,10 +357,9 @@ input[type=checkbox] {
     }
 
     #dots {
-        right: 2.5px;
-        font-size: 20px; /* Reduce font size */
-        display: flex;
-        position: relative;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 18px;
     }
 }
 
@@ -374,14 +372,12 @@ input[type=checkbox] {
 }
 
 #dots {
-    text-align: center;
     cursor: pointer;
     display: flex;
-    position: absolute;  /* Ensure that the parent has a positioned ancestor */
-    right: 20px;
+    position: relative;  /* Ensure that the parent has a positioned ancestor */
     font-size: 24px;
-    align-items: center; /* Centers items vertically */
-    justify-content: center; /* Centers items horizontally */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #dotstext {
