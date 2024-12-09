@@ -222,7 +222,7 @@ input[type=checkbox] {
 @media (max-width: 768px) {
     /* Title Images */
     #dots {
-        right: 5px;
+        right: 2.5px;
         font-size: 20px; /* Reduce font size */
         display: flex;
         position: relative;
@@ -358,7 +358,7 @@ input[type=checkbox] {
     }
 
     #dots {
-        right: 5px;
+        right: 2.5px;
         font-size: 20px; /* Reduce font size */
         display: flex;
         position: relative;
@@ -390,6 +390,7 @@ input[type=checkbox] {
 
 #header {
     border-top: 5px solid white;
+    border-bottom: 5px solid #333;
     background: #333;
     color: white;
     text-align: center;
