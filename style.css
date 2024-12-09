@@ -222,9 +222,9 @@ input[type=checkbox] {
 @media (max-width: 768px) {
     /* Title Images */
     #dots {
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 18px;
+        margin-left: 3px;
+        margin-right: 3px;
+        font-size: 14px;
     }
 
     h1 {
@@ -357,9 +357,9 @@ input[type=checkbox] {
     }
 
     #dots {
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 18px;
+        margin-left: 3px;
+        margin-right: 3px;
+        font-size: 14px;
     }
 }
 
