@@ -96,15 +96,27 @@ li {
 
 label {
     background: white;
-    width: 100%;
+    width: 85%;
     padding: 10px;
     display: flex;
-    border: 2px solid #333;
     align-items: center;
     gap: 10px;
+    border-right: 3px solid;
     border-radius: 10px;
     cursor: pointer;
     text-align: left;
+    position: relative;
+}
+
+#PokemonButtonContainer {
+    background: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
 }
 
 label:hover {
@@ -209,6 +221,18 @@ input[type=checkbox] {
 /* Responsive Styles */
 @media (max-width: 768px) {
     /* Title Images */
+    h1 {
+        font-size: 20px;
+    }
+  
+    h2 {
+        font-size: 18px;
+    }
+  
+    #bulbasaur-img {
+        width: 100%;
+    }
+
     #titleimage, #title4image {
         width: 40px;
         height: auto; /* Maintain aspect ratio */
@@ -334,3 +358,44 @@ input[type=checkbox] {
     display: flex;
     color: white;
 }
+
+#dots {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+}
+
+#dotstext {
+    cursor: pointer;
+}
+
+#header {
+    border-top: 5px solid white;
+    background: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  #Pokemon-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #pokemontitle {
+    font-size: 40px;
+  }
+  
+  #main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
