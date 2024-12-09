@@ -225,7 +225,7 @@ input[type=checkbox] {
         right: 5px;
         font-size: 20px; /* Reduce font size */
         display: flex;
-        position: absolute;
+        position: relative;
     }
 
     h1 {
@@ -361,7 +361,7 @@ input[type=checkbox] {
         right: 5px;
         font-size: 20px; /* Reduce font size */
         display: flex;
-        position: absolute;
+        position: relative;
     }
 }
 
