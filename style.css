@@ -374,10 +374,11 @@ input[type=checkbox] {
 #dots {
     cursor: pointer;
     display: flex;
-    position: relative;  /* Ensure that the parent has a positioned ancestor */
     font-size: 24px;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 15%;
 }
 
 #dotstext {
