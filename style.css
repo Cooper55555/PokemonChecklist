@@ -382,11 +382,12 @@ input[type=checkbox] {
 #dots {
     cursor: pointer;
     display: flex;
-    font-size: 24px;
+    font-size: 28px;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 15%;
+    height: 10px;
 }
 
 #dotstext {
