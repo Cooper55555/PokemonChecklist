@@ -224,7 +224,7 @@ input[type=checkbox] {
     #dots {
         cursor: pointer;
         display: flex;
-        font-size: 8px;
+        font-size: 12px;
         justify-content: space-around;
         align-items: center;
         text-align: center;
@@ -363,7 +363,7 @@ input[type=checkbox] {
     #dots {
         cursor: pointer;
         display: flex;
-        font-size: 8px;
+        font-size: 12px;
         justify-content: space-around;
         align-items: center;
         text-align: center;
