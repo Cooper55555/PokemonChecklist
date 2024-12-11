@@ -34,10 +34,6 @@ function selectInput(list){
     resultsBox.innerHTML = '';
 }
 
-function CraftingTable() {
-    document.getElementById("search-box").style.display = "none";
-}
-
 const button = document.getElementById('checkButton');
 button.addEventListener('click', function() {
     const input = document.getElementById('input-box').value;
